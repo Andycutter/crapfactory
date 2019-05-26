@@ -4,4 +4,7 @@ class IdeasController < ApplicationController
     @ideas = Idea.all
   end
 
+  def new
+  end
+
 end
