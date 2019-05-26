@@ -11,6 +11,8 @@ Feature: Create an idea
         When I fill in 'Title' with 'My new idea'
         And I fill in 'Description' with 'Thoughts and bullet points of my idea'
         And I click the 'Add idea' button
-        Then I should be on 'My new idea' page
+        Then I should be on the 'landing' page
+        And I should see 'Idea successfully added'
         And I should see 'My new idea'
         And I should see 'Thoughts and bullet points of my idea'
+        And a idea titled 'My new idea' in the database

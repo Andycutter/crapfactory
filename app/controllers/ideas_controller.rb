@@ -7,4 +7,11 @@ class IdeasController < ApplicationController
   def new
   end
 
+  def create
+    @idea = Idea.new(params[:idea])
+
+    @idea.save
+    redirect_to root_path, notice: 'Idea successfully added'
+  end
+
 end
