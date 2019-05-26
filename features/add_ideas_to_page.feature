@@ -5,7 +5,7 @@ Feature: List ideas on the landing page
 
     Scenario: View ideas on landing page
         Given the following ideas exists
-            |titel          |description                        |
+            |title          |description                        |
             |Great idea     |This is a great idea for a project |
             |Fantastic idea |A fantastic idea for a project     |
         When I visit the site

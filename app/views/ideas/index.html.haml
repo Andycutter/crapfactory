@@ -1,3 +1,6 @@
 %h1 Ideas:
-%h3 Idea title
-%p Idea description
+%br
+- @ideas.each do |idea|
+    %h3= idea.title
+    %br
+    %p= idea.description
